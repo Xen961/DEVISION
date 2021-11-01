@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="xen.MainController">
+   <center>
+      <AnchorPane blendMode="DARKEN" prefHeight="400.0" prefWidth="599.0" style="-fx-background-color: white;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="203.0" fitWidth="209.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo10_27_03710.jpeg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="324.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/lock-6-256.jpg" />
+               </image>
+            </ImageView>
+            <Label fx:id="labelMsg" layoutX="284.0" layoutY="202.0" opacity="0.85" prefHeight="17.0" prefWidth="229.0" textFill="#e43a3a" wrapText="true" />
+            <Button fx:id="btnLogin" layoutX="285.0" layoutY="328.0" mnemonicParsing="false" onAction="#LoginButtonOnAction" prefHeight="36.0" prefWidth="71.0" text="Login" textFill="#191818" />
+            <TextField fx:id="userInput" layoutX="285.0" layoutY="246.0" prefHeight="25.0" prefWidth="227.0" promptText="User Name" />
+            <PasswordField fx:id="passwordInput" layoutX="285.0" layoutY="288.0" prefHeight="25.0" prefWidth="228.0" promptText="Password" />
+            <Label layoutX="204.0" layoutY="246.0" prefHeight="17.0" prefWidth="64.0" text="User:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="203.0" layoutY="289.0" prefHeight="27.0" prefWidth="85.0" text="Password:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnCancel" layoutX="435.0" layoutY="328.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="36.0" prefWidth="76.0" text="Cancel" textFill="#222121" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </AnchorPane>
+   </center>
+</BorderPane>
